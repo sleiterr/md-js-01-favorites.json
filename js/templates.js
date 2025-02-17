@@ -9,7 +9,7 @@ export const productListTmpl = (product) =>
       <p class='price-item'><i>${product.price} kr</i></p>
      </div>
      <div class='card-bttn'>
-      <button><a href="page.html?id=${product.id}">Se produkt</a></button>
+      <button class='product-bttn'><a href="page.html?id=${product.id}" class='card-link'>Se produkt</a></button>
       <button class="favBtn" id="${product.id}">Føj til favoritter</button> 
      </div>
     </div>

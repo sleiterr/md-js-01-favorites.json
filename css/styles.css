@@ -67,8 +67,12 @@ button {
 /*! STYLE */
 /**========================*/
 
-.products-container {
-  padding: 0 90px;
+.products-section {
+}
+
+.card-container {
+  padding: 90px 0;
+  width: 100%;
 }
 
 .products-title {
@@ -102,7 +106,26 @@ button {
 /**=================*/
 
 .products-card {
+  border-radius: 14px;
+  padding: 15px 18px;
   background-color: #f1f1f1;
+}
+
+.content-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 14px 8px;
+}
+
+.card-bttn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
 }
 
 .card-title {
@@ -123,7 +146,40 @@ button {
 .card-bttn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   gap: 14px;
+}
+
+.product-bttn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background-color: rgb(17, 146, 221);
+}
+
+.product-bttn:hover {
+  background-color: rgb(29, 160, 236, 0.9);
+  transition: 250ms ease;
+}
+
+.card-link {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.06em;
+}
+
+.favBtn {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background-color: rgb(51, 51, 51);
+}
+
+.favBtn:hover {
+  background-color: rgb(51, 51, 51, 0.9);
+  transition: 250ms ease-in-out;
 }
