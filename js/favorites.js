@@ -1,4 +1,5 @@
 import { fetchProducts } from "./fetch_data.js";
+import { FavListTmpl } from "./templates.js";
 
 const products = await fetchProducts();
 
@@ -29,5 +30,13 @@ export const favorites = () => {
     favBtn.forEach((btn) => {
       btn.addEventListener("click", addToFav);
     });
+
+    const favoriteList = () => {
+      favoritesArray.forEach((fav) => {
+        favoriteContainer.insertAdjacentHTML("afterend", FavListTmpl(fav));
+      });
+    };
+
+    favoriteList();
   }
 };
