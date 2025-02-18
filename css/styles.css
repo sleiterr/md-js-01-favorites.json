@@ -47,6 +47,7 @@ body {
   /* font-size: 62.5%; */
   height: 100%;
   line-height: 1;
+  background-color: rgb(156, 189, 216);
 }
 
 button {
@@ -58,9 +59,29 @@ button {
 }
 
 .container {
-  width: min(100%, 1140px); /* parent size 100% width */
+  width: min(90%, 1336px); /* parent size 100% width */
   margin: 0 auto;
   padding: 0 15px;
+}
+
+/**========================*/
+/*! NAV-BAR */
+/**========================*/
+
+.nav-bar {
+  background-color: navy;
+  padding: 0 30px;
+}
+
+.link-box {
+  padding: 12px 0;
+}
+
+.favr-link {
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.04em;
 }
 
 /**========================*/
@@ -182,4 +203,115 @@ button {
 .favBtn:hover {
   background-color: rgb(51, 51, 51, 0.9);
   transition: 250ms ease-in-out;
+}
+
+.favorite-footer {
+  background-color: #333;
+  padding: 90px 0;
+}
+
+/**=========================*/
+/*! FAVORITE-SECTION */
+/**=========================*/
+
+.favorit-container {
+  padding: 90px 0;
+}
+
+.favorit-title {
+  font-weight: 400;
+  font-size: 52px;
+
+  color: #333;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.favorite-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 60px;
+  width: 100%;
+}
+
+.fav-card {
+  display: flex;
+  border-radius: 14px;
+  padding: 15px 18px;
+  background-color: #f1f1f1;
+  width: 90%;
+}
+
+.fav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 1;
+
+  padding-left: 60px;
+}
+
+.fav-title {
+  font-weight: 600;
+  font-size: 36px;
+
+  color: #333;
+  letter-spacing: 0.04px;
+  line-height: 1.6;
+}
+
+.price-fav {
+  font-weight: 500;
+  font-size: 32px;
+
+  color: #111;
+  letter-spacing: 0.04px;
+}
+
+.fav-bttn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.view-bttn {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: rgb(17, 146, 221);
+}
+
+.view-bttn:hover {
+  background-color: rgb(29, 160, 236, 0.9);
+  transition: 250ms ease;
+}
+
+.view-link {
+  font-weight: 300;
+  font-size: 22px;
+
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+.delete-favBtn {
+  align-self: flex-end;
+}
+
+.delete-favBtn > i {
+  font-size: 36px;
+
+  color: red;
+
+}
+
+.delete-favBtn:hover {
+  color: rgb(255, 86, 86, 0.85);
+  transition: 250ms ease;
 }
