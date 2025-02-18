@@ -229,6 +229,15 @@ button {
   margin-bottom: 60px;
 }
 
+.prod-title {
+  font-weight: 600;
+  font-size: 40px;
+
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .favorite-container {
   display: flex;
   flex-direction: column;
@@ -308,10 +317,95 @@ button {
   font-size: 36px;
 
   color: red;
-
 }
 
 .delete-favBtn:hover {
   color: rgb(255, 86, 86, 0.85);
   transition: 250ms ease;
+}
+
+/**====================*/
+/*! VIEW-SECTION */
+/**====================*/
+
+.view-container {
+  padding: 90px 0;
+}
+
+.product-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-view {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 40px;
+  background-color: #f1f1f1;
+  width: 70%;
+}
+
+.view-content {
+}
+
+.view-title {
+  font-weight: 500;
+  font-size: 26px;
+
+  color: #333;
+  line-height: normal;
+}
+
+.view-price {
+  font-weight: 500;
+  font-size: 22px;
+
+  color: #333;
+  letter-spacing: 0, 04em;
+}
+
+.view-desc {
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #333;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+
+  width: 560px;
+  margin-top: 16px;
+}
+
+.view-btt {
+  padding: 8px 36px;
+  border-radius: 20px;
+  background-color: slateblue;
+  align-self: flex-end;
+  margin-top: 22px;
+
+  margin-right: 50px;
+}
+
+.view-btt:hover {
+  background-color: rgb(106, 90, 205, 0.85);
+  transition: 250ms ease;
+}
+
+.view-link {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 30px;
 }

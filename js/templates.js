@@ -16,15 +16,20 @@ export const productListTmpl = (product) =>
   `;
 export const productPageTmpl = (product) =>
   `
-    <h2>${product.title}</h2>
-    <p><i>${product.price} kr</i></p>
-    <img src="${product.image}${product.id}">
-    <p>${product.description}</p>
-    <button><a href="index.html">Tilbage</a></button> 
-
-<br>
-`;
-
+  <div class="product-view">
+   <img src="${product.image}${product.id}">
+   <div class='product-info'>
+   <div class='view-content'>
+   <h4 class='view-title'>${product.title}</h4>
+   <p class='view-price'><i>${product.price} kr</i></p>
+   <p class='view-desc'>${product.description}</p>
+   </div>
+   </div>
+   </div>
+   
+   `;
+  //  <button class='view-btt'><a href="index.html" class='view-link'>Tilbage</a></button> 
+   
 export const FavListTmpl = (product) =>
   `
     <div class='fav-card'>
