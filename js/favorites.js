@@ -46,12 +46,4 @@ export const favorites = () => {
   favBtn.forEach((btn) => {
     btn.addEventListener("click", addToFav);
   });
-
-  // const favoriteList = () => {
-  //   favoriteContainer.innerHTML = "";
-  //   favoritesArray.forEach((fav) => {
-  //     favoriteContainer.insertAdjacentHTML("afterend", FavListTmpl(fav));
-  //   });
-
-  // favoriteList();
 };
