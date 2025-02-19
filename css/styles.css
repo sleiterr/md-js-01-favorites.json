@@ -215,7 +215,7 @@ button {
 /**=========================*/
 
 .favorit-container {
-  padding: 90px 0;
+  padding: 120px 0;
 }
 
 .favorit-title {
@@ -327,6 +327,18 @@ button {
 /**====================*/
 /*! VIEW-SECTION */
 /**====================*/
+
+.favorit-section {
+  height: 100%;
+}
+
+.favorite-msg {
+  font-weight: 500;
+  font-size: 32px;
+
+  color: #ff5d6a;
+  letter-spacing: 0.04em;
+}
 
 .view-container {
   padding: 90px 0;

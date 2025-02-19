@@ -10,6 +10,8 @@ export const favorites = () => {
 
   const favoriteList = () => {
     if (favoriteContainer) {
+      favoriteContainer.innerHTML = "";
+
       if (favoritesArray.length != 0) {
         favoriteContainer.innerHTML = "";
         favoritesArray.forEach((fav) => {
@@ -18,10 +20,11 @@ export const favorites = () => {
       } else {
         favoriteContainer.insertAdjacentHTML(
           "beforeend",
-          "Der er ikke tilføjet nogle favorite"
+          "<p class='favorite-msg'>Der er ikke tilføjet nogle favorite</p>"
         );
       }
     }
+    deleteItem();
   };
   favoriteList();
 
@@ -46,4 +49,19 @@ export const favorites = () => {
   favBtn.forEach((btn) => {
     btn.addEventListener("click", addToFav);
   });
+
+  function deleteItem() {
+    const bttnDelete = document.querySelectorAll(".delete-favBtn");
+
+    bttnDelete.forEach((bttn) => {
+      bttn.addEventListener("click", () => {
+        const index = Number(bttn.getAttribute("data-index"));
+
+        favoritesArray.splice(index, 1);
+        localStorage.setItem("favList", JSON.stringify(favoritesArray));
+
+        favoriteList();
+      });
+    });
+  }
 };
