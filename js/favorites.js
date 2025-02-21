@@ -13,7 +13,6 @@ export const favorites = () => {
       favoriteContainer.innerHTML = "";
 
       if (favoritesArray.length != 0) {
-        favoriteContainer.innerHTML = "";
         favoritesArray.forEach((fav) => {
           favoriteContainer.insertAdjacentHTML("beforeend", FavListTmpl(fav));
         });
@@ -26,6 +25,7 @@ export const favorites = () => {
     }
     deleteItem();
   };
+
   favoriteList();
 
   const addToFav = (e) => {

@@ -1,73 +1,162 @@
 [
-    {
-      "id": 0,
-      "title": "Wireless Headphones",
-      "description": "High-quality wireless headphones with noise-canceling technology and up to 20 hours of battery life.",
-      "price": 999.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 1,
-      "title": "Smart Watch",
-      "description": "Water-resistant smart watch with health tracking, GPS, and customizable watch faces.",
-      "price": 1499.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 2,
-      "title": "Bluetooth Speaker",
-      "description": "Portable Bluetooth speaker with deep bass, 360-degree sound, and 10-hour playtime.",
-      "price": 799.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 3,
-      "title": "4K Ultra HD TV",
-      "description": "65-inch 4K Ultra HD Smart TV with HDR support and built-in streaming apps.",
-      "price": 4999.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 4,
-      "title": "Gaming Laptop",
-      "description": "Powerful gaming laptop with a 15.6-inch display, Intel i7 processor, and 16GB RAM.",
-      "price": 8999.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 5,
-      "title": "Smartphone",
-      "description": "Latest generation smartphone with a 6.5-inch display, triple-camera system, and 128GB storage.",
-      "price": 7499.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 6,
-      "title": "Electric Toothbrush",
-      "description": "Rechargeable electric toothbrush with smart sensor technology and multiple brushing modes.",
-      "price": 499.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 7,
-      "title": "Fitness Tracker",
-      "description": "Sleek fitness tracker with heart rate monitoring, sleep tracking, and step counter.",
-      "price": 599.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 8,
-      "title": "Robot Vacuum Cleaner",
-      "description": "Automatic robot vacuum cleaner with smart navigation and powerful suction.",
-      "price": 2499.99,
-      "image": "https://picsum.photos/300/300?"
-    },
-    {
-      "id": 9,
-      "title": "Air Purifier",
-      "description": "HEPA air purifier with a 3-stage filtration system to remove allergens and pollutants.",
-      "price": 1299.99,
-      "image": "https://picsum.photos/300/300?"
-    }
-  ]
-  
+  {
+    "id": 0,
+    "title": "Redken Extreme Shampoo",
+    "price": 189,
+    "description": "Styrkende shampoo til skadet hår, der reducerer knæk og spaltede spidser.",
+    "category": "Hår",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 1,
+    "title": "Matas Natur Balsam",
+    "price": 79,
+    "description": "Mild og plejende balsam med økologisk aloe vera og sheasmør.",
+    "category": "Hår",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 2,
+    "title": "GHD Gold Styler Glattejern",
+    "price": 1399,
+    "description": "Professionelt glattejern, der sikrer silkeblødt og skinnende hår.",
+    "category": "Hår",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 3,
+    "title": "L'Oréal Paris Elvital Dream Length Shampoo",
+    "price": 49,
+    "description": "Nærende shampoo, der styrker lange hår og modvirker knækkede spidser.",
+    "category": "Hår",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 4,
+    "title": "Maybelline Lash Sensational Mascara",
+    "price": 99,
+    "description": "Volumengivende mascara med vifteformet børste for fyldige vipper.",
+    "category": "Makeup",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 5,
+    "title": "MAC Studio Fix Fluid Foundation",
+    "price": 289,
+    "description": "Langtidsholdbar foundation med medium til fuld dækning og SPF 15.",
+    "category": "Makeup",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 6,
+    "title": "NYX Professional Makeup Butter Gloss",
+    "price": 69,
+    "description": "Fugtgivende lipgloss med en cremet og ikke-klæbrig konsistens.",
+    "category": "Makeup",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 7,
+    "title": "Clinique Chubby Stick Blush",
+    "price": 249,
+    "description": "Blød blush-stick, der giver en naturlig og sund glød til kinderne.",
+    "category": "Makeup",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 8,
+    "title": "Rimmel London Stay Matte Powder",
+    "price": 59,
+    "description": "Mattende pudder, der reducerer glans og holder huden frisk hele dagen.",
+    "category": "Makeup",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 9,
+    "title": "Ole Henriksen Truth Serum",
+    "price": 549,
+    "description": "Vitamin C-serum, der lysner huden og giver en sund glød.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 10,
+    "title": "La Roche-Posay Effaclar Duo+",
+    "price": 199,
+    "description": "Effektiv ansigtscreme mod urenheder og rødme.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 11,
+    "title": "Vichy Mineral 89 Booster",
+    "price": 259,
+    "description": "Fugtgivende booster med hyaluronsyre, der styrker hudbarrieren.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 12,
+    "title": "The Ordinary Niacinamide 10% + Zinc 1%",
+    "price": 79,
+    "description": "Serum, der reducerer urenheder og forbedrer hudens tekstur.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 13,
+    "title": "Matas Striber Fugtighedscreme",
+    "price": 49,
+    "description": "Plejende og fugtgivende creme til daglig brug.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 14,
+    "title": "Lancôme Hydra Zen Gel Cream",
+    "price": 399,
+    "description": "Lettende og fugtgivende ansigtscreme, der beroliger huden.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 15,
+    "title": "Garnier Micellar Cleansing Water",
+    "price": 59,
+    "description": "Mild og effektiv makeupfjerner til ansigt og øjne.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 16,
+    "title": "Batiste Dry Shampoo Original",
+    "price": 39,
+    "description": "Tørshampoo, der opfrisker håret mellem hårvaske.",
+    "category": "Hår",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 17,
+    "title": "L'Oréal Paris Color Riche Lipstick",
+    "price": 99,
+    "description": "Læbestift med intens farve og plejende ingredienser.",
+    "category": "Makeup",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 18,
+    "title": "Eucerin Hyaluron-Filler Night Cream",
+    "price": 269,
+    "description": "Anti-age natcreme, der reducerer fine linjer og rynker.",
+    "category": "Hudpleje",
+    "image": "https://picsum.photos/300/300?"
+  },
+  {
+    "id": 19,
+    "title": "Tangle Teezer Wet Detangler",
+    "price": 129,
+    "description": "Børste designet til at skånsomt rede vådt hår uden at knække det.",
+    "category": "Hår",
+    "image": "https://picsum.photos/300/300?"
+  }
+]
