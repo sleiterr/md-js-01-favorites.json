@@ -92,7 +92,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .btn-search {

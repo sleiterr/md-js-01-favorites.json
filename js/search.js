@@ -7,8 +7,8 @@ const productListContainer = document.querySelector(".product-container");
 
 export const search = () => {
   const renderResult = (result) => {
-      productListContainer.innerHTML = "";
-      
+    productListContainer.innerHTML = "";
+
     result.forEach((element) => {
       productListContainer.insertAdjacentHTML(
         "beforeend",
@@ -18,15 +18,24 @@ export const search = () => {
   };
 
   const searchInput = (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    console.log(searchTerm);
+    const searchTerm = e.target.value.toLowerCase().trim();
+    const category = document.querySelector("#category").value;
 
-    const result = products.filter((product) =>
-      product.title.includes(searchTerm)
-    );
-    console.log(result);
-
-    renderResult(result);
+    if (category === "Alle") {
+      const result = products.filter((product) =>
+        product.title.toLowerCase().trim().includes(searchTerm)
+      );
+      renderResult(result);
+    } else {
+      const findCategory = products.filter(
+        (product) => product.category == category
+      );
+      const result = findCategory.filter((product) =>
+        product.title.toLowerCase().trim().includes(searchTerm)
+      );
+      renderResult(result);
+    }
+    // console.log(result);
   };
 
   const input = document.querySelector("#search-input");
