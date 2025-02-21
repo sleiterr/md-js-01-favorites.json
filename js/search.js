@@ -7,9 +7,10 @@ const productListContainer = document.querySelector(".product-container");
 
 export const search = () => {
   const renderResult = (result) => {
-    result.forEach((element) => {
       productListContainer.innerHTML = "";
-      productListContainer.insertAdjacentElement(
+      
+    result.forEach((element) => {
+      productListContainer.insertAdjacentHTML(
         "beforeend",
         productListTmpl(element)
       );
@@ -17,7 +18,7 @@ export const search = () => {
   };
 
   const searchInput = (e) => {
-    const searchTerm = e.target.value;
+    const searchTerm = e.target.value.toLowerCase();
     console.log(searchTerm);
 
     const result = products.filter((product) =>
