@@ -78,7 +78,7 @@ button {
 }
 
 .link-box {
-  padding: 12px 0;
+  padding: 22px 0;
 }
 
 .favr-link {
@@ -88,22 +88,32 @@ button {
   letter-spacing: 0.04em;
 }
 
+/*? INPUT */
+
 .search-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 22px;
 }
 
 .btn-search {
   font-size: 18px;
+
   color: #fff;
   letter-spacing: 0.04em;
+
   border: 1px solid #fff;
-  padding: 4px 14px;
+  border-radius: 4px;
+  padding: 4px 32px;
 }
 #search-input {
   width: 240px;
+  height: 26px;
+}
+
+#category {
+  width: 90px;
   height: 26px;
 }
 
@@ -150,49 +160,61 @@ button {
 /**=================*/
 
 .products-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   border-radius: 14px;
   padding: 15px 18px;
   background-color: #f1f1f1;
+
+  width: 340px;
+  height: 460px;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+
+  width: 100%;
+  height: auto;
 }
 
 .content-items {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 
-  padding: 14px 8px;
+  height: 100%;
+  width: 100%;
 }
 
 .card-bttn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   gap: 14px;
+  width: 100%;
 }
 
 .card-title {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 
   color: #333;
   letter-spacing: 0.04px;
-  line-height: 1.6;
+  line-height: 1.2;
+
+  margin-bottom: 8px;
 }
 
 .price-item {
   font-weight: 500;
   font-size: 18px;
   color: #111;
-}
-
-.card-bttn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  gap: 14px;
 }
 
 .product-bttn {
