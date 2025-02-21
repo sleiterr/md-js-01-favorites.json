@@ -91,6 +91,7 @@ button {
 /*? INPUT */
 
 .search-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,21 +101,51 @@ button {
 .btn-search {
   font-size: 18px;
 
-  color: #fff;
+  color: #333;
   letter-spacing: 0.04em;
 
-  border: 1px solid #fff;
+  background-color: #fff;
   border-radius: 4px;
-  padding: 4px 32px;
+  padding: 6px 32px;
 }
+
+.btn-search:hover {
+  transition: 250ms ease;
+  background-color: #1a89f1;
+  color: #fff;
+}
+
 #search-input {
-  width: 240px;
-  height: 26px;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #333;
+  letter-spacing: 0.04em;
+
+  outline: none;
+  display: block;
+  padding: 0 15px 0 95px;
+  width: 290px;
+  height: 32px;
+  border-radius: 14px;
 }
 
 #category {
+  position: absolute;
+  display: block;
+  left: 0;
   width: 90px;
-  height: 26px;
+  height: 32px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  outline: none;
+  border-radius: 14px 0 0 14px;
+  border-right: 2px solid rgb(51, 51, 51, 0.4);
 }
 
 /**========================*/
@@ -122,10 +153,13 @@ button {
 /**========================*/
 
 .products-section {
+  min-height: 100vh;
+
 }
 
 .card-container {
   padding: 90px 0;
+  height: 100%;
   width: 100%;
 }
 
