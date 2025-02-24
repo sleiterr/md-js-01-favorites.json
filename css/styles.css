@@ -47,7 +47,7 @@ body {
   /* font-size: 62.5%; */
   height: 100%;
   line-height: 1;
-  background-color: rgb(156, 189, 216);
+  background-color: #9cbdd8;
 }
 
 button {
@@ -70,6 +70,7 @@ button {
 
 .nav-bar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
@@ -125,7 +126,7 @@ button {
   outline: none;
   display: block;
   padding: 0 15px 0 95px;
-  width: 290px;
+  width: 320px;
   height: 32px;
   border-radius: 14px;
 }
@@ -134,7 +135,7 @@ button {
   position: absolute;
   display: block;
   left: 0;
-  width: 90px;
+  width: 120px;
   height: 32px;
 
   font-weight: 400;
@@ -205,14 +206,6 @@ button {
 
   width: 340px;
   height: 460px;
-}
-
-img {
-  object-fit: cover;
-  object-position: center;
-
-  width: 100%;
-  height: auto;
 }
 
 .content-items {
@@ -295,7 +288,6 @@ img {
 
 .favorit-container {
   padding: 120px 0;
-  height: 100vh;
 }
 
 .favorit-title {
