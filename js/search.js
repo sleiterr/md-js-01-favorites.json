@@ -18,7 +18,10 @@ export const search = () => {
   };
 
   const searchInput = (e) => {
-    const searchTerm = e.target.value.toLowerCase().trim();
+    const searchTerm = document
+      .querySelector("#search-input")
+      .value.toLowerCase()
+      .trim();
     const category = document.querySelector("#category").value;
 
     if (category === "Alle") {
@@ -30,14 +33,24 @@ export const search = () => {
       const findCategory = products.filter(
         (product) => product.category == category
       );
-      const result = findCategory.filter((product) =>
-        product.title.toLowerCase().trim().includes(searchTerm)
-      );
-      renderResult(result);
+
+      if (searchTerm == "") {
+        const result = findCategory;
+        renderResult(result);
+      } else {
+        const result = findCategory.filter((product) =>
+          product.title.toLowerCase().trim().includes(searchTerm)
+        );
+        renderResult(result);
+      }
+
     }
     // console.log(result);
   };
 
   const input = document.querySelector("#search-input");
   input.addEventListener("input", searchInput);
+
+  const select = document.querySelector("#category");
+  select.addEventListener('change', searchInput)
 };
